@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="locadora.diurno">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="locadora.diurno.dal.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/locadora.diurno.dal/locadora.diurno.dal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="locadora.diurno.bll.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/locadora.diurno.bll/locadora.diurno.bll">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="locadora.diurno"/>
+        <property name="java-output-path" value="/locadora.diurno/build/classes"/>
+    </wb-module>
+</project-modules>

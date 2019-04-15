@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<persistence-unit name="locadora" transaction-type="JTA">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+   		<jta-data-source>locadoraDB</jta-data-source>
+		
+		<class>locadora.diurno.dal.entidade.Marca</class>
+		<class>locadora.diurno.dal.entidade.Modelo</class>
+		<class>locadora.diurno.dal.entidade.Automovel</class>
+		<class>locadora.diurno.dal.entidade.Opcional</class>
+		<class>locadora.diurno.dal.entidade.Cor</class>
+		<class>locadora.diurno.dal.entidade.Combustivel</class>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE"/>
+			<property name="eclipselink.logging.parameters" value="true"/>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+		</properties>
+	</persistence-unit>
+</persistence>
